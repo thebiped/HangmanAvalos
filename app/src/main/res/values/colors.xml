@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0F172A</color>
+    <color name="colorSecondary">#0EA5E9</color>
+    <color name="backgroundDark">#0B1120</color>
+    <color name="textWhite">#FFFFFF</color>
+    <color name="hintGray">#A0AEC0</color>
+    <color name="starYellow">#FFD700</color>
+    <color name="btnPurple">#8B5CF6</color>
+    <color name="btnBlue">#38BDF8</color>
+    <color name="colorAccent">#DA3CB0</color>
+    <color name="colorHint">#962C7A</color>
+    <color name="purpleLight">#A855F7</color>
+    <color name="purpleDark">#6B21A8</color>
+    <color name="pink">#F472B6</color>
+
+    <color name="purpleStat1">#7C3AED</color>
+    <color name="purpleStat2">#9333EA</color>
+    <color name="purpleStat3">#6D28D9</color>
+
+    <color name="letterCorrect">#22C55E</color>
+    <color name="letterWrong">#EF4444</color>
+    <color name="letterDisabled">#6B7280</color>
+
+    <color name="navInactive">#A78BFA</color>
+    <color name="navActive">#F472B6</color>
+
+    <color name="purpleCard">#4C1D95</color>
+    <color name="blueCard">#2563EB</color>
+
+    <color name="buttonBlue">#1E40AF</color>
+    <color name="buttonDisabled">#334155</color>
+    <color name="btnMenuRegister">#DA3CB0</color>
+    <color name="btnMenuLogin">#4E5ED7</color>
+    <color name="gray_disabled">#BDBDBD</color>
+    <color name="blue_enabled">#2196F3</color>
+
+
+    <color name="stokeMenu_Register">#9008FF</color>
+    <color name="stokeMenu_Login">#008CFF</color>
+
+    <color name="transparent">#00000000</color>
+
+</resources>

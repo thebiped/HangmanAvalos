@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Círculo base del ahorcado -->
+    <path
+        android:pathData="M 54,20 A 34,34 0 1,1 54,88 A 34,34 0 1,1 54,20 Z"
+        android:strokeWidth="4"
+        android:strokeColor="#FF4081"
+        android:fillColor="#00000000" />
+    
+    <!-- Línea vertical del poste -->
+    <path
+        android:pathData="M 54,20 L 54,80"
+        android:strokeWidth="4"
+        android:strokeColor="#FF4081" />
+    
+    <!-- Línea horizontal superior -->
+    <path
+        android:pathData="M 54,20 L 88,20"
+        android:strokeWidth="4"
+        android:strokeColor="#FF4081" />
+    
+    <!-- Cuerda -->
+    <path
+        android:pathData="M 88,20 L 88,35"
+        android:strokeWidth="3"
+        android:strokeColor="#FF4081" />
+    
+    <!-- Cabeza del ahorcado -->
+    <path
+        android:pathData="M 88,35 A 8,8 0 1,1 88,51 A 8,8 0 1,1 88,35 Z"
+        android:strokeWidth="2"
+        android:strokeColor="#FF4081"
+        android:fillColor="#00000000" />
+    
+    <!-- Cuerpo -->
+    <path
+        android:pathData="M 88,51 L 88,75"
+        android:strokeWidth="2"
+        android:strokeColor="#FF4081" />
+    
+    <!-- Brazos -->
+    <path
+        android:pathData="M 88,60 L 78,70"
+        android:strokeWidth="2"
+        android:strokeColor="#FF4081" />
+    <path
+        android:pathData="M 88,60 L 98,70"
+        android:strokeWidth="2"
+        android:strokeColor="#FF4081" />
+    
+    <!-- Piernas -->
+    <path
+        android:pathData="M 88,75 L 78,85"
+        android:strokeWidth="2"
+        android:strokeColor="#FF4081" />
+    <path
+        android:pathData="M 88,75 L 98,85"
+        android:strokeWidth="2"
+        android:strokeColor="#FF4081" />
+</vector>
+

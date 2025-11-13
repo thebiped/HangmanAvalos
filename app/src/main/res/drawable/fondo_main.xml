@@ -1,0 +1,20 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo principal degradado -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#6915AD"
+                android:centerColor="#250F52"
+                android:endColor="#130631"
+                android:angle="280"/>
+        </shape>
+    </item>
+
+    <!-- Capa curva inferior -->
+    <item android:top="200dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#1A1A2E" />
+            <corners android:topLeftRadius="1000dp" android:topRightRadius="1000dp"/>
+        </shape>
+    </item>
+</layer-list>

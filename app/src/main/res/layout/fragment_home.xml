@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundDark">
+
+    <ScrollView
+        android:id="@+id/scrollHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigation"
+        android:fillViewport="true"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="24dp">
+
+            <RelativeLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:paddingVertical="8dp">
+
+                <!-- Contenedor de puntos del usuario -->
+                <LinearLayout
+                    android:id="@+id/pointsContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="@drawable/bg_uno"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_star"
+                        android:contentDescription="Puntos"
+                        app:tint="@color/textWhite"/>
+
+                    <TextView
+                        android:id="@+id/txtPuntos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:layout_marginStart="8dp"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="12sp"
+                        android:autoSizeMaxTextSize="16sp"/>
+                </LinearLayout>
+
+                <!-- Botón cerrar sesión -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCerrarSesion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="48dp"
+                    android:minHeight="48dp"
+                    android:background="@drawable/bg_logout"
+                    android:drawableEnd="@drawable/ic_logout"
+                    android:drawableTint="@color/textWhite"
+                    android:contentDescription="Cerrar sesión"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+            <!-- Sección de estadísticas recientes -->
+            <LinearLayout
+                android:id="@+id/cardStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bg_card_stat"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Estadísticas Recientes"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_uno"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:text="Partidas Ganadas"
+                            android:textSize="10sp"
+                            android:textColor="@color/textWhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtPartidasGanadas"                            android:text="10"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/textWhite"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_uno"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:text="Partidas Perdidas"
+                            android:textSize="10sp"
+                            android:textColor="@color/textWhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtPartidasPerdidas"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/textWhite"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_uno"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:padding="8dp">
+
+                        <TextView
+
+                            android:text="Horas Jugadas"
+                            android:textSize="10sp"
+                            android:textColor="@color/textWhite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/txtHorasJugadas"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/textWhite"
+                            android:gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Contenedor de modos de juego -->
+            <LinearLayout
+                android:id="@+id/gameModesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Modo Clásico -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_modo"
+                    android:layout_marginBottom="16dp"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/classic"
+                        android:background="@drawable/circle_mask"
+                        android:clipToOutline="true"
+                        android:outlineProvider="background" />
+
+
+                    <TextView
+                        android:text="Modo Clásico"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Juega al ahorcado tradicional con palabras aleatorias."
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnJugarClasico"
+                        android:text="Jugar Ahora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_primary_home"
+                        android:textColor="@color/textWhite" />
+                </LinearLayout>
+
+                <!-- Modo Temático -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_match"
+                    android:layout_marginBottom="16dp"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/tematico"
+                        android:background="@drawable/circle_mask"
+                        android:clipToOutline="true"
+                        android:outlineProvider="background" />
+
+                    <TextView
+                        android:text="Modo Temático"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Palabras agrupadas por categorías: deportes, animales, países, etc."
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnModoTematico"
+                        android:text="Jugar Ahora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_primary_home"
+                        android:textColor="@color/textWhite"/>
+
+                </LinearLayout>
+
+                <!-- Modo Contra Reloj -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_stat"
+                    android:layout_marginBottom="16dp"
+                    android:padding="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cronometro"
+                        android:background="@drawable/circle_mask"
+                        android:clipToOutline="true"
+                        android:outlineProvider="background" />
+
+                    <TextView
+                        android:text="Modo Contra Reloj"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/white"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Adivina tantas palabras como puedas antes de que se acabe el tiempo."
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnModoReloj"
+                        android:text="Jugar Ahora"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_primary_home"
+                        android:textColor="@color/textWhite"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="665dp"
+    android:height="375dp"
+    android:viewportWidth="665"
+    android:viewportHeight="375">
+
+    <group android:name="hangman_logo">
+        <path android:fillColor="#000000" android:pathData="M413,240v39h4l1-1v-2l-1-1v-21l1-1l1,1v1l2,2v1l4,4v1l1,1v1l2,2v1l2,2v1l3,3v1l1,1v1l1,1l1,0v-30l1-1v-6l1-1h-6v22l-1,1l-1-1v-1l-4-4v-1l-1-1v-1l-2-2v-1l-2-2v-1l-4-4v-1l-1-1v-1l-2-2v-1l-4-4v-1l-1-1v-1l-1-1v-1l-4-4"/>
+    </group>
+</vector>

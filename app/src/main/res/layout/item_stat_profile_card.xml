@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#6D28D9"
+    android:layout_margin="6dp"
+    android:gravity="center">
+
+    <ImageView
+    android:id="@+id/iconStat"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    app:tint="@android:color/white"
+    android:src="@drawable/ic_trophy" />
+
+    <TextView
+    android:id="@+id/titleStat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Partidas ganadas"
+    android:textColor="@android:color/white"
+    android:textSize="12sp"
+    android:layout_marginTop="4dp"/>
+
+    <TextView
+    android:id="@+id/valueStat"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1000"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"
+    android:textSize="14sp"
+    android:layout_marginTop="2dp"/>
+</LinearLayout>

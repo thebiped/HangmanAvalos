@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/fondo_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="32dp">
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/titleText"
+            android:text="Iniciar sesión"
+            android:textColor="@color/textWhite"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Label Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:text="Email:"
+            android:textColor="@color/textWhite"/>
+
+        <!-- Input Email -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingStart="16dp"
+            android:drawablePadding="12dp"
+            android:hint="example@gmail.com"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/input_background"
+            android:drawableStart="@drawable/ic_email"
+            android:textColor="@color/textWhite"
+            android:textColorHint="@color/hintGray" />
+
+        <!-- Label Contraseña -->
+        <TextView
+            android:text="Contraseña:"
+            android:textColor="@color/textWhite"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Input Contraseña -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingStart="16dp"
+            android:drawablePadding="12dp"
+            android:hint="contraseña"
+            android:inputType="textPassword"
+            android:background="@drawable/input_background"
+            android:drawableStart="@drawable/ic_password"
+            android:textColor="@color/textWhite"
+            android:textColorHint="@color/hintGray" />
+
+        <!-- Botón Iniciar Sesión -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:text="Iniciar Sesión"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_login_register"
+            android:textStyle="bold"
+            android:textColor="@color/textWhite" />
+
+        <TextView
+            android:text="¿No tienes creada una cuenta?"
+            android:textColor="@color/textWhite"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Link Registrarse -->
+        <TextView
+            android:id="@+id/registroText"
+            android:text="Registrarse"
+            android:textColor="@color/colorSecondary"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</ScrollView>

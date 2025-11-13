@@ -1,0 +1,16 @@
+<!-- themes.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Tema del splash screen nativo -->
+    <style name="Theme.App.Start" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="windowSplashScreenBackground">@color/backgroundDark</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.Hangman</item>
+    </style>
+
+    <!-- Tema para el resto de la aplicación -->
+    <style name="Base.Theme.Hangman" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/backgroundDark</item>
+    </style>
+
+</resources>

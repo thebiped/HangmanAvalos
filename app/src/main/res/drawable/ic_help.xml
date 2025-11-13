@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Bulbo de la lámpara -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,2c-3.87,0 -7,3.13 -7,7 0,2.53 1.29,4.75 3.25,6.1v1.4c0,0.83 0.67,1.5 1.5,1.5h4.5c0.83,0 1.5-0.67 1.5-1.5v-1.4C17.71,13.75 19,11.53 19,9c0-3.87 -3.13-7 -7-7z" />
+
+    <!-- Base en espiral -->
+    <path
+        android:fillColor="#CCCCCC"
+        android:pathData="M10,20h4c0.55,0 1,0.45 1,1v0c0,0.55 -0.45,1 -1,1h-4c-0.55,0 -1-0.45 -1-1v0c0-0.55 0.45-1 1-1z" />
+
+    <path
+        android:fillColor="#B0B0B0"
+        android:pathData="M10.5,22h3c0.28,0 0.5,0.22 0.5,0.5v0c0,0.28 -0.22,0.5 -0.5,0.5h-3c-0.28,0 -0.5-0.22 -0.5-0.5v0c0-0.28 0.22-0.5 0.5-0.5z" />
+
+    <!-- Filamento -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M13.5,9h-3c-0.28,0 -0.5,0.22 -0.5,0.5v0c0,0.28 0.22,0.5 0.5,0.5h3c0.28,0 0.5-0.22 0.5-0.5v0c0-0.28 -0.22-0.5 -0.5-0.5z" />
+
+    <!-- Reflejo (highlight sutil) -->
+    <path
+        android:fillColor="#40FFFFFF"
+        android:pathData="M12,2.5c-2.76,0 -5,2.24 -5,5 0,0.3 0.03,0.6 0.08,0.89 0.06,0.33 0.4,0.54 0.72,0.44 0.33-0.1 0.52-0.44 0.44-0.77C8.08,7.5 9.9,5.5 12,5.5c0.41,0 0.75-0.34 0.75-0.75s-0.34-0.75 -0.75-0.75z" />
+</vector>

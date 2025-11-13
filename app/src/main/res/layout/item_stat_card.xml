@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_uno"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="8dp">
+
+    <TextView
+        android:text="Partidas Hoy"
+        android:textSize="12sp"
+        android:textColor="@color/textWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="10"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/textWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

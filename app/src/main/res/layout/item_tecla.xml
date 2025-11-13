@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:layout_margin="4dp"
+    android:gravity="center"
+    android:text="A"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:textAllCaps="false"
+    app:cornerRadius="8dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="@android:color/transparent"
+    app:backgroundTint="#673AB7" />

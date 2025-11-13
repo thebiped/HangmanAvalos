@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@drawable/bg_card_modo"
+    android:layout_marginBottom="8dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/resultadoPartida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ganada"
+        android:textColor="#EC4899"
+        android:textStyle="bold"
+        android:layout_marginEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/palabra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Palabra: planeta"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/puntos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+25Pts"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
+</LinearLayout>

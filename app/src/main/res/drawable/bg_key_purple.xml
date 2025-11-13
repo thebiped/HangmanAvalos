@@ -1,0 +1,9 @@
+<!-- res/drawable/bg_key_purple.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/btnPurple" />
+    <corners android:radius="6dp" />
+    <stroke
+        android:width="2dp"
+        android:color="@android:color/transparent" />
+</shape>
